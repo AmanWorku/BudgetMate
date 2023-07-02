@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   devise_scope :user do
     get '/logout', to: 'devise/sessions#destroy'
   end  
-  root to: 'user#index'
+  root to: 'users#index'
 end
