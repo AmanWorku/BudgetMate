@@ -1,15 +1,73 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Proxima Nova", Helvetica;
+  /* border: 2px solid red; */
+}
+
+:root {
+  --primary-color: #3778c2;
+  --secondary-color: #5fb523;
+  --text-color: #434b54;
+}
+
+.splash-container {
+  background-color: white;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+    color: var(--text-color);
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 5px;
+  width: 100%;
+  padding: 1em;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button, a {
+  background-color: #5fb523;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+  width: 10%;
+}
+
+button:hover, a:hover {
+  background-color: #434b54;
+  cursor: pointer;
+}
+
+.signup {
+    background-color: white;
+    color: var(--text-color);
+}
+
+.signup:hover {
+    background-color: white;
+    color: var(--secondary-color);
+}
