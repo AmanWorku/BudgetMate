@@ -7,3 +7,24 @@
         <i class="fa-solid fa-right-from-bracket"></i>
     </a>
 </div>
+
+
+<div id="payments">
+
+<% if @payments.empty? %>
+      <div class="empty-message">No transactions here yet.</div>
+    <% else %>
+  <% @payments.each do |payment| %>
+  <div class="single-payment">
+      <p class="payment-name"><%= payment.name %></p>
+      <p> $ <%= payment.amount %> </p>
+    </div>
+  <% end %>
+  <% end %>
+
+        <div class="category">
+            <i class="fa-solid fa-plus"></i>
+             <%= link_to "Add Transaction", new_category_payment_path %>
+        </div>
+
+</div>
