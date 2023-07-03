@@ -26,7 +26,7 @@
 
 # Budget Mate 💰 <a name="about-project"></a>
 
-Budget Mate is a web application that helps users keep track of their personal finances and budgeting goals. The application allows users to create a budget and track their spending across different categories such as groceries, transportation, and entertainment. Budget Mate allows users to add income and expenses to their budget, and provides visualizations and charts to help users better understand their spending patterns. Users can create custom categories for their expenses, and the application provides insights and recommendations based on their spending habits to help them achieve their financial goals.
+Budget Mate is a web application that helps users keep track of their personal finances and budgeting goals. The application allows users to create a budget and track their spending across different categories such as groceries, transportation, and entertainment.
 
 ## 🛠 Built With <a name="built-with"></a>
 
