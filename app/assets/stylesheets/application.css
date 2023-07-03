@@ -179,3 +179,83 @@ button:hover, buttons a:hover {
 .remember-me-label {
   color: var(--text-color);
 }
+
+.category-header {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em;
+  background-color: var(--primary-color);
+}
+
+.category-header i {
+  font-size: 1.3em;
+}
+
+.category-header a {
+  color: white;
+}
+
+.category-header i:hover {
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+}
+
+.add-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 1em 1em;
+  color: white;
+  gap: 10px;
+}
+
+.add-category-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.add-category-link:hover {
+  opacity: 0.7;
+}
+
+.categories-container .no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-container input[type="text"] {
+  padding: 0.5em 1em;
+  margin-bottom: 10px;
+}
+
+.form-container .submit-button {
+  width: 175px;
+  background-color: var(--secondary-color);
+  padding: 0.5em 1em;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
