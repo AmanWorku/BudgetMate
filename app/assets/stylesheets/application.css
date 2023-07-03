@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "proxima-nova";
-  /* border: 2px solid red; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lobster", cursive;
 }
 
 :root {
@@ -23,7 +32,7 @@
 }
 
 .title {
-    color: var(--text-color);
+  color: var(--text-color);
   font-size: 3rem;
   margin-bottom: 4rem;
 }
@@ -35,6 +44,7 @@
   margin-bottom: 2rem;
   margin-top: -4rem;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -45,13 +55,14 @@
 }
 
 .button {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button, .buttons a {
+button,
+.buttons a {
   background-color: #5fb523;
   color: #fff;
   font-size: 1rem;
@@ -63,45 +74,46 @@ button, .buttons a {
   transition: background-color 0.2s ease-in-out;
 }
 
-button:hover, buttons a:hover {
+button:hover {
   background-color: #434b54;
   cursor: pointer;
 }
 
 .buttons .signin {
-    background-color: var(--primary-color);
-    color: white;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .buttons .signin:hover {
-    background-color: var(--secondary-color);
-    color: white;
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .buttons .signup {
-    background-color: white;
-    color: var(--text-color);
+  background-color: white;
+  color: var(--text-color);
 }
 
 .buttons .signup:hover {
-    background-color: white;
-    color: var(--secondary-color);
+  background-color: white;
+  color: var(--secondary-color);
 }
 
 .credential-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    background-color: var(--primary-color);
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  background-color: var(--primary-color);
+  height: 100vh;
 }
 
 .credential-form h2 {
   color: white;
   margin-bottom: 2em;
 }
+
 .container-form {
   background-color: white;
   padding: 2em 2em;
@@ -126,6 +138,11 @@ button:hover, buttons a:hover {
   width: 100%;
 }
 
+.form-container input[type="text"] {
+  padding: 0.5em 1em;
+  margin-bottom: 10px;
+}
+
 .container-form .actions input[type="submit"]:hover {
   background-color: var(--primary-color);
   cursor: pointer;
@@ -144,13 +161,27 @@ button:hover, buttons a:hover {
   width: 100%;
 }
 
-
 .field input[type="email"]:focus,
 .field input[type="text"]:focus,
 .field input[type="password"]:focus {
   outline: none;
   border-bottom: 2px solid var(--secondary-color);
   font-size: 15px;
+}
+
+.category-header a {
+  color: white;
+}
+
+.add-category a {
+  color: white;
+  text-decoration: none;
+}
+
+.categories-container a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2em;
 }
 
 .all-links a {
@@ -194,10 +225,6 @@ button:hover, buttons a:hover {
   font-size: 1.3em;
 }
 
-.category-header a {
-  color: white;
-}
-
 .category-header i:hover {
   opacity: 0.7;
   transition: 0.2s ease-in-out;
@@ -232,11 +259,6 @@ button:hover, buttons a:hover {
   opacity: 0.7;
 }
 
-.add-category a {
-  color: white;
-  text-decoration: none;
-}
-
 .no-data {
   display: flex;
   align-items: center;
@@ -252,11 +274,6 @@ button:hover, buttons a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
-
-.form-container input[type="text"] {
-  padding: 0.5em 1em;
-  margin-bottom: 10px;
 }
 
 .form-container .submit-button {
@@ -295,12 +312,6 @@ button:hover, buttons a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.categories-container a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 1.2em;
 }
 
 .categories-container a:hover {
