@@ -208,10 +208,12 @@ button:hover, buttons a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
-  padding: 1em 1em;
   color: white;
   gap: 10px;
+  border: 1px solid white;
+  width: 70%;
+  margin-inline: auto;
+  padding: 1em 0;
 }
 
 .add-category-link {
@@ -222,10 +224,17 @@ button:hover, buttons a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
+  background-color: var(--secondary-color);
+  padding: 1em 1em;
 }
 
 .add-category-link:hover {
   opacity: 0.7;
+}
+
+.add-category a {
+  color: white;
+  text-decoration: none;
 }
 
 .categories-container .no-data {
@@ -269,7 +278,21 @@ button:hover, buttons a:hover {
 .category {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  padding: 1em 2em;
+  width: 90%;
+  border: 1px solid var(--text-color);
+  margin-inline: auto;
+  border-radius: 8px;
+}
+
+.category-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
