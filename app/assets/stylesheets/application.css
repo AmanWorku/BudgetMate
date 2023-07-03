@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Proxima Nova", Helvetica;
+  font-family: "proxima-nova";
   /* border: 2px solid red; */
 }
 
@@ -78,6 +78,23 @@ button:hover, buttons a:hover {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+.credential-form h2 {
+  color: white;
+  margin-bottom: 2em;
+}
+.container-form {
+  background-color: white;
+  padding: 2em 4em;
+  border-radius: 8px;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .field input[type="email"],
