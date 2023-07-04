@@ -1,0 +1,32 @@
+<div class="category-header">
+   <a href="<%= categories_path %>">
+    <i class="fa-solid fa-arrow-left"></i>
+  </a>
+    <h2>My Transactions</h2>
+    <a href="/logout">
+        <i class="fa-solid fa-right-from-bracket"></i>
+    </a>
+</div>
+
+
+<div id="payments">
+
+<% if @payments.empty? %>
+      <p class="no-data">No transactions here yet.</p>
+    <% else %>
+  <% @payments.each do |payment| %>
+  <div class="single-payment">
+      <p class="payment-name"><%= payment.name %></p>
+      <p>Price: $ <%= payment.amount %> </p>
+    </div>
+  <% end %>
+  <% end %>
+
+        <div class="add-category-link">     
+            <div class="add-category">
+            <i class="fa-solid fa-plus"></i>
+             <%= link_to "Add Transaction", new_category_payment_path %>
+             </div>
+        </div>
+
+</div>
